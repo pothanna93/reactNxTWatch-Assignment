@@ -1,0 +1,86 @@
+import styled from 'styled-components'
+
+export const LoginContainer = styled.div`
+  border: 1px solid red;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+`
+export const ResponseContainer = styled.div`
+  border: 1px solid green;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 55%;
+    max-width: 600px;
+  }
+`
+export const LogoImage = styled.img`
+  width: 160px;
+
+  margin-top: 20px;
+`
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+`
+export const UserContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 10px;
+`
+export const LabelElement = styled.label`
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 8px;
+`
+export const InputElement = styled.input`
+  height: 42px;
+  border: 1px solid #475569;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+`
+export const ShowPasswordContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+`
+export const InputCheckbox = styled.input`
+  height: 20px;
+  width: 16px;
+`
+export const LabelCheckBox = styled.label`
+  font-family: 'Roboto';
+  margin-left: 6px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+`
+export const ButtonElement = styled.button`
+  color: #fff;
+  background-color: #3b82f6;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+`
