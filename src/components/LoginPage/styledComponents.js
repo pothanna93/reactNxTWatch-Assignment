@@ -8,6 +8,7 @@ export const LoginContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 16px;
+  background-color: ${props => (props.back ? '#212121' : '#fff')};
 `
 export const ResponseContainer = styled.div`
   border: 1px solid green;
@@ -18,7 +19,7 @@ export const ResponseContainer = styled.div`
   justify-content: center;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 16px;
-
+  background-color: ${props => (props.backColor ? ' #0f0f0f' : '#fff')};
   @media screen and (min-width: 768px) {
     width: 55%;
     max-width: 600px;
@@ -44,10 +45,10 @@ export const UserContainer = styled.div`
   margin-bottom: 10px;
 `
 export const LabelElement = styled.label`
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Roboto';
   font-weight: 500;
-  color: #475569;
+  color: ${props => (props.userName ? '#ffffff' : '#475569')};
   margin-bottom: 8px;
 `
 export const InputElement = styled.input`
@@ -56,7 +57,11 @@ export const InputElement = styled.input`
   padding: 10px;
   border-radius: 4px;
   outline: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: ${props => (props.textColor ? '#ffffff' : '#000000')};
 `
+
 export const ShowPasswordContainer = styled.div`
   display: flex;
   align-items: center;
@@ -70,7 +75,7 @@ export const LabelCheckBox = styled.label`
   font-family: 'Roboto';
   margin-left: 6px;
   font-size: 16px;
-  color: #000000;
+  color: ${props => (props.showPassword ? '#ffffff' : '#000000')};
   font-weight: 500;
 `
 export const ButtonElement = styled.button`
